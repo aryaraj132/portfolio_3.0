@@ -11,7 +11,7 @@ export default function Nav() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="/">
-              <h1 className="text-3xl cursor-pointer"><span className="text-cyan-500">Aryan </span><span className="text-teal-500">Raj</span></h1>
+              <h1 className="text-3xl cursor-pointer"><span className="text-cyan-500">{`< Aryan `}</span><span className="text-teal-500">{`Raj />`}</span></h1>
               </Link>
             </div>
 
@@ -34,37 +34,39 @@ export default function Nav() {
             <button type="button" onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
               <span className="sr-only">Open main menu</span>
               {!isOpen ? (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+                // <svg
+                //   className="block h-6 w-6"
+                //   xmlns="http://www.w3.org/2000/svg"
+                //   fill="none"
+                //   viewBox="0 0 24 24"
+                //   stroke="currentColor"
+                //   aria-hidden="true"
+                // >
+                //   <path
+                //     strokeLinecap="round"
+                //     strokeLinejoin="round"
+                //     strokeWidth="2"
+                //     d="M4 6h16M4 12h16M4 18h16"
+                //   />
+                // </svg>
+                <h1 className="text-xl cursor-pointer">{`<>`}</h1>
               ) : (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                // <svg
+                //   className="block h-6 w-6"
+                //   xmlns="http://www.w3.org/2000/svg"
+                //   fill="none"
+                //   viewBox="0 0 24 24"
+                //   stroke="currentColor"
+                //   aria-hidden="true"
+                // >
+                //   <path
+                //     strokeLinecap="round"
+                //     strokeLinejoin="round"
+                //     strokeWidth="2"
+                //     d="M6 18L18 6M6 6l12 12"
+                //   />
+                // </svg>
+                <h1 className="text-xl cursor-pointer">{`</>`}</h1>
               )}
             </button>
           </div>
