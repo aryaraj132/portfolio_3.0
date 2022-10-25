@@ -5,33 +5,6 @@ export default function Nav() {
   const [user, setUser] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    // <nav className="flex justify-between items-center py-10">
-    //   <Link href="/">Logo</Link>
-    //   <ul className="flex items-center gap-10">
-    //     <a className="text-lg font-medium" href="#">
-    //       Courses
-    //     </a>
-    //     {!user && (
-    //       <Link href="/auth/login">
-    //         <a className="py-2 px-4 text-lg bg-teal-500 text-white rounded-lg font-medium ml-8">
-    //           Log In
-    //         </a>
-    //       </Link>
-    //     )}
-    //     {user && (
-    //       <div>
-    //         <Link href="/dashboard">
-    //           <img
-    //             referrerPolicy="no-referrer"
-    //             className="w-12 rounded-full"
-    //             src={user.photoURL}
-    //             alt=""
-    //           />
-    //         </Link>
-    //       </div>
-    //     )}
-    //   </ul>
-    // </nav>
     <nav className="bg-gray-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
@@ -46,13 +19,13 @@ export default function Nav() {
           <div className="flex items-center">
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/dashboard"><a className="bg-cyan-500 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a></Link>
+                <Link href="/dashboard" legacyBehavior><h4 className="bg-cyan-500 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</h4></Link>
               </div>
             </div>
             <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
               <div className="relative ml-3">
-                  <button type="button" className="px-4 py-2 text-md bg-teal-500 text-white rounded-lg font-medium" role="menuitem" tabindex="-1" id="user-menu-item-2">Contact Me</button>
+                  <button type="button" className="px-4 py-2 text-md bg-teal-500 text-white rounded-lg font-medium" role="menuitem" id="user-menu-item-2">Contact Me</button>
               </div>
             </div>
             </div>
@@ -109,10 +82,10 @@ export default function Nav() {
         {(ref) => (
           <div className="md:hidden" id="mobile-menu">
             <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-              <Link href="/dashboard"><a className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a></Link>
+              <Link href="/dashboard" legacyBehavior><h4 className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</h4></Link>
             </div>
             <div className="border-t border-gray-700 pt-4 pb-3">
-                <button type="button" className="px-4 py-2 text-md bg-teal-500 text-white rounded-lg font-medium mx-8 w-40" role="menuitem" tabindex="-1" id="user-menu-item-2">Contact Me</button>
+                <button type="button" className="px-4 py-2 text-md bg-teal-500 text-white rounded-lg font-medium mx-8 w-40" role="menuitem" id="user-menu-item-2">Contact Me</button>
             </div>
           </div>
         )}
