@@ -5,7 +5,7 @@ export default function Nav() {
   const [user, setUser] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-gray-800">
+    <nav className="bg-gray-800 sticky top-0 z-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
